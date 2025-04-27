@@ -1,0 +1,1924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="yugedu.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- fontawsom -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- second -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="college_data.js"></script>
+  <!-- owl-carousel --><!-- testimonial -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<!-- aos -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>yugedu</title>
+</head>
+
+<body>
+  <!-- Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body d-flex p-0">
+    
+        <div class="bg-light d-none d-md-flex flex-column align-items-center justify-content-center" style="width: 80%;">
+          <img src="../images/sign-up-concept-illustration.png" alt="Student" class="img-fluid p-4">
+        </div>
+
+        <div class="form-section flex-grow-1">
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="text-center mb-3">
+            <img src="./images/logo.png" class="logo">
+            <h4 class="mt-2 text-danger">Don't Ignore Your Education!</h4>
+            <p>Start Your Journey Today</p>
+          </div>
+
+          <form>
+            <div class="row g-2">
+              <div class="col-md-6">
+                <input type="text" id="name" class="form-control" placeholder="Name *" required>
+              </div>
+              <div class="col-md-6">
+                <input type="email" id="email" class="form-control" placeholder="Email *" required>
+              </div>
+              <div class="col-md-6">
+                <div class="input-group">
+                  <span class="input-group-text">+91</span>
+                  <input type="tel" id="phone" class="form-control" placeholder="Your Phone Number *" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <input type="date" id="dob" class="form-control" placeholder="DOB *" required>
+              </div>
+              <div class="col-md-6">
+                <select id="course" class="form-select" required>
+                  <option selected disabled>Select Course *</option>
+                  <option>Engineering</option>
+                  <option>Medical</option>
+                  <option>Management</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <select id="state" class="form-select" required>
+                  <option selected disabled>Select State *</option>
+                  <option>Maharashtra</option>
+                  <option>Delhi</option>
+                  <option>Karnataka</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <select id="gender" class="form-select" required>
+                  <option selected>Male</option>
+                  <option>Female</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="whatsapp-toggle form-check form-switch mt-3">
+              <input class="form-check-input" type="checkbox" id="whatsappUpdates" checked>
+              <label class="form-check-label" for="whatsappUpdates">Get updates on WhatsApp</label>
+            </div>
+
+            <div class="text-center mt-2">
+              <p>Already have an account? <a href="#">Sign In</a></p>
+            </div>
+
+            <div class="d-grid">
+              <button type="submit" class="btn btn-warning">Register</button>
+            </div>
+          </form>
+
+          <div class="info-section mt-4">
+            <div>
+              <img src="https://cdn-icons-png.flaticon.com/512/483/483947.png" alt="University">
+              <div>24800+ Universities</div>
+            </div>
+            <div>
+              <img src="https://cdn-icons-png.flaticon.com/512/1161/1161388.png" alt="Counselling">
+              <div>Book Video Counselling</div>
+            </div>
+            <div>
+              <img src="https://cdn-icons-png.flaticon.com/512/456/456212.png" alt="24/7">
+              <div>24/7 Free Counselling</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- model end -->
+
+    <!-- navbar top start -->
+    <section class="container-fluid header-section" style="background-color: #F5F5F5; border-bottom: 1px solid #F5F5F5;">
+        <div class="py-1 text-center container" style="height: 35px;">
+            <div class="d-flex justify-content-between align-items-center flex-wrap"
+                style="font-size: 14px; font-weight: 300; color: #111827;   font-family: 'Golos Text', sans-serif; height: 100%;">
+
+                <div class="d-flex align-items-center">
+                    <ul class="d-flex list-unstyled social-icon">
+                        <li class=""> <i class="bi bi-telephone-fill "></i> <span class="ms-2" style="font-size: 12px;">
+                                +91 931 099 1267</span> </li>
+                        <li class=""><i class="bi bi-envelope-arrow-down-fill"></i> <span class="ms-2"
+                                style="font-size: 12px;"> info@yugedu.com</span></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="d-flex list-unstyled social-icon">
+                        <li class="fs-12 d-flex gap-2 ">
+                            <div style="transform: rotate(40deg);"> <i class="bi bi-paperclip "></i> </div> <span
+                                style="font-size: 12px;"> What Yugedu Different?</span>
+                        </li>
+                        <li class=""><i class="bi bi-facebook "></i></li>
+                        <li class=""><i class="bi bi-twitter-x"></i></li>
+                        <li class=""><i class="bi bi-instagram"></i></li>
+                        <li class=""><i class="bi bi-youtube"></i></li>
+                        <li class=""><i class="bi bi-linkedin"></i></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- navbar top end -->
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-xl" style="border-bottom: 1px solid #dcdcdc ; border-top: 1px solid #e9e9e9 ">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./images/logo.png" class="logo"></a>
+            <ul class="navbar-nav     justify-content-center laptop-nav">
+                <li class="nav-item">
+                    <a style="color: #CF3425;" id="dot" class="nav-link active" aria-current="page" href="#">Explore Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Universities</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Resourses</a>
+                </li>
+            </ul>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="./images/close-btn.png" alt="" >
+            </button>
+
+            <div class="offcanvas offcanvas-end " id="offcanvasRight" tabindex="-1" >
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasExampleLabel"><img src="./images/logo.png" class="logo"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                  </div>
+                <div class="mobile-canvas p-5">
+
+        
+                    <ul class="navbar-nav d-flex flex-column justify-content-center  gap-3">
+                        <li class="nav-item d-flex justify-content-between align-items-center">
+                            <a style="color: #CF3425;"  class="nav-link active" aria-current="page" href="#">Explore Courses</a>
+                            <i class="bi bi-caret-right-fill"></i>
+                        </li>
+                        <li class="nav-item d-flex justify-content-between align-items-center">
+                            <a class="nav-link active" aria-current="page" href="#">Universities</a>
+                            <i class="bi bi-caret-right-fill"></i>
+                        </li>
+                        <li class="nav-item d-flex justify-content-between align-items-center">
+                            <a class="nav-link active" aria-current="page" href="#">Resourses</a>
+                            <i class="bi bi-caret-right-fill"></i>
+                        </li>
+                    </ul>
+                </div>
+                <div class="button-section ">
+                    <div>
+                        <button class="btn1"> <i class="bi bi-search text-warning"></i> <span class="text-warning">|</span>Search</button> 
+                    </div>
+                    <div>
+                        <button class="btn2">Compare University <img src="./images/weight.png" alt=""></button>
+                    </div>
+                    <div>
+                        <button class="btn3">Get Councelling video <img src="./images/video-camera.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- crousel item start -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./images/b1.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="./images/b2.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <div class="crousel-icon">
+            <i class="bi bi-caret-left-fill" aria-hidden="true"></i>
+            <div class="control-btn"></div>
+        </div>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <div class="crousel-icon">
+                <i class="bi bi-caret-right-fill" aria-hidden="true"></i>
+                <div class="control-btn"></div>
+            </div>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+    <!-- crousel item end -->
+
+    <!-- info section start -->
+        <div class="info-section1" >
+            <div class="container p-sm-4  p-md-4 p-lg-4 " style="background-color: #FFFFFF ; border-radius: 10px; width: 95%;">
+                <div class="info-card" >
+                    <div class="row " >
+                        <div class="col-md-3 col-6 d-flex info-section" >
+                           <div class="info-img p-1 me-2" >
+                                <img src="./images/hero (2).png" alt="">
+                           </div>
+                           <div class="info-txt">
+                            <div class="info-head ">Scholarship Assistance</div>
+                            <div class="info-body ">Available</div>
+                           </div>
+                             <div class="line"></div>
+                        </div>
+                        <div class="col-md-3 col-6 d-flex info-section">
+                            <div class="info-img p-1 me-2" >
+                                <img src="./images/hero (3).png" alt="">
+                           </div>
+                           <div class="info-txt">
+                            <div class="info-head ">Placement Assistant</div>
+                            <div class="info-body ">Top firms/ Companies</div>
+                           </div>
+                             <div class="line"></div>
+                        </div>
+                        <div class="col-md-3 col-6 d-flex info-section">
+                            <div class="info-img p-1 me-2" >
+                                <img src="./images/hero (4).png" alt="">
+                           </div>
+                           <div class="info-txt">
+                            <div class="info-head ">Instant University Comparison</div>
+                            <div class="info-body ">Top choices</div>
+                           </div>
+                             <div class="line"></div>
+                        </div>
+                        <div class="col-md-3 col-6 d-flex info-section">
+                            <div class="info-img p-1 me-2" >
+                                <img src="./images/hero (1).png" alt="">
+                           </div>
+                           <div class="info-txt">
+                            <div class="info-head ">Personalized Video Counselling</div>
+                            <div class="info-body ">30-min session</div>
+                           </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+            </div>
+
+            <div class="container py-3 py-lg-5">
+                <div class="row">
+                    <div class="section-header col-md-12 text-center mb-5">
+                        <h2 class="text-center">Online & Distance Education Universities <span style="color: #CF3425; position: absolute; ">.</span></h2>
+                  
+                    <div class=" d-flex justify-content-center align-items-center  gap-1 gap-md-0 gap-lg-0 gap-xl-0">
+                        <span class="text-bar"></span>
+                        Discover India's leading universities offering comprehensive courses through online and distance education to shape your future.
+                        <span class="text-bar"></span>
+                    </div>
+                </div>
+                <div class="col-12 traveler-slider">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide slide-card">
+                            <div class="slider-card">
+                                <div class="card-body px-2 py-3">
+                                       <div class="row ">
+                                        <div class="col-md-4 ">
+                                            <div class="card-img me-2 d-flex justify-content-center justify-content-sm-start mb-3 mb-sm-0">
+                                                <img src="./images/un-logo (16).png" alt="" style="width: 100px;">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-head">
+                                                <div class=" mb-2 text-center text-lg-start" style="font-size: 12px; font-weight: 500;">Lovely Professional University Online</div>
+                                            </div>
+                                            <div class="card-info d-flex gap-2 justify-content-center justify-content-sm-start">
+                                                <div class="raiting">
+                                                          4.9
+                                                </div>
+                                                <div class="reviews">
+                                                         (450 Reviews)
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                       </div>
+                                </div>
+                                <div class="card-footer d-flex justify-content-center  justify-content-sm-between align-items-center ">
+                                      <div class="d-none d-md-block">
+                                        <i class="bi bi-patch-check-fill"></i>   Punjab
+                                      </div>
+                                      <div style=" font-size: 12px;    background-color: #FFF; border: 1px solid #04BD6C; color: #04BD6C; padding: 5px; border-radius: 5px; z-index: 1; position: relative; top: -5px;" class="mt-2 mt-sm-0" >
+                                              11 Courses
+                                      </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slide-card">
+                            <div class="slider-card">
+                                <div class="card-body px-2 py-3">
+                                       <div class="row ">
+                                        <div class="col-md-4 ">
+                                            <div class="card-img me-2 d-flex justify-content-center justify-content-sm-start mb-3 mb-sm-0">
+                                                <img src="./images/un-logo (11).png" alt="" style="width: 100px;">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-head">
+                                                <div class=" mb-2 text-center text-lg-start" style="font-size: 12px; font-weight: 500;">Amity University</div>
+                                            </div>
+                                            <div class="card-info d-flex gap-2 justify-content-center justify-content-sm-start">
+                                                <div class="raiting">
+                                                          4.8
+                                                </div>
+                                                <div class="reviews">
+                                                         (900 Reviews)
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                       </div>
+                                </div>
+                                <div class="card-footer d-flex justify-content-center  justify-content-sm-between align-items-center ">
+                                      <div class="d-none d-md-block">
+                                        <i class="bi bi-patch-check-fill"></i>   Punjab
+                                      </div>
+                                      <div style=" font-size: 12px;    background-color: #FFF; border: 1px solid #04BD6C; color: #04BD6C; padding: 5px; border-radius: 5px; z-index: 1; position: relative; top: -5px;" class="mt-2 mt-sm-0" >
+                                              15 Courses
+                                      </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slide-card">
+                            <div class="slider-card">
+                                <div class="card-body px-2 py-3">
+                                       <div class="row ">
+                                        <div class="col-md-4 ">
+                                            <div class="card-img me-2 d-flex justify-content-center justify-content-sm-start mb-3 mb-sm-0">
+                                                <img src="./images/un-logo (14).png" alt="" style="width: 100px;">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-head">
+                                                <div class=" mb-2 text-center text-lg-start" style="font-size: 12px; font-weight: 500;">Sharda University</div>
+                                            </div>
+                                            <div class="card-info d-flex gap-2 justify-content-center justify-content-sm-start">
+                                                <div class="raiting">
+                                                          4.7
+                                                </div>
+                                                <div class="reviews">
+                                                         (220 Reviews)
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                       </div>
+                                </div>
+                                <div class="card-footer d-flex justify-content-center  justify-content-sm-between align-items-center ">
+                                      <div class="d-none d-md-block">
+                                        <i class="bi bi-patch-check-fill"></i>  Noida, U.P
+                                      </div>
+                                      <div style=" font-size: 12px;    background-color: #FFF; border: 1px solid #04BD6C; color: #04BD6C; padding: 5px; border-radius: 5px; z-index: 1; position: relative; top: -5px;" class="mt-2 mt-sm-0" >
+                                              8 Courses
+                                      </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slide-card">
+                            <div class="slider-card">
+                                <div class="card-body px-2 py-3">
+                                       <div class="row ">
+                                        <div class="col-md-4 ">
+                                            <div class="card-img me-2 d-flex justify-content-center justify-content-sm-start mb-3 mb-sm-0">
+                                                <img src="./images/un-logo (29).png" alt="" style="width: 100px;">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-head">
+                                                <div class=" mb-2 text-center text-lg-start" style="font-size: 12px; font-weight: 500;">Madras University</div>
+                                            </div>
+                                            <div class="card-info d-flex gap-2 justify-content-center justify-content-sm-start">
+                                                <div class="raiting">
+                                                          4.9
+                                                </div>
+                                                <div class="reviews">
+                                                         (760 Reviews)
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                       </div>
+                                </div>
+                                <div class="card-footer d-flex justify-content-center  justify-content-sm-between align-items-center ">
+                                      <div class="d-none d-md-block">
+                                        <i class="bi bi-patch-check-fill"></i>   Tamil Nadu
+                                      </div>
+                                      <div style=" font-size: 12px;    background-color: #FFF; border: 1px solid #04BD6C; color: #04BD6C; padding: 5px; border-radius: 5px; z-index: 1; position: relative; top: -5px;" class="mt-2 mt-sm-0" >
+                                              13 Courses
+                                      </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slide-card">
+                            <div class="slider-card">
+                                <div class="card-body px-2 py-3">
+                                       <div class="row ">
+                                        <div class="col-md-4 ">
+                                            <div class="card-img me-2 d-flex justify-content-center justify-content-sm-start mb-3 mb-sm-0">
+                                                <img src="./images/un-logo (27).png" alt="" style="width: 100px;">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-head">
+                                                <div class=" mb-2 text-center text-lg-start" style="font-size: 12px; font-weight: 500;">Mizoram University</div>
+                                            </div>
+                                            <div class="card-info d-flex gap-2 justify-content-center justify-content-sm-start">
+                                                <div class="raiting">
+                                                          4.3
+                                                </div>
+                                                <div class="reviews">
+                                                         (150 Reviews)
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                       </div>
+                                </div>
+                                <div class="card-footer d-flex justify-content-center  justify-content-sm-between align-items-center ">
+                                      <div class="d-none d-md-block">
+                                        <i class="bi bi-patch-check-fill"></i>   Mizoram
+                                      </div>
+                                      <div style=" font-size: 12px;    background-color: #FFF; border: 1px solid #04BD6C; color: #04BD6C; padding: 5px; border-radius: 5px; z-index: 1; position: relative; top: -5px;" class="mt-2 mt-sm-0" >
+                                              7 Courses
+                                      </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slide-card">
+                            <div class="slider-card">
+                                <div class="card-body px-2 py-3">
+                                       <div class="row ">
+                                        <div class="col-md-4 ">
+                                            <div class="card-img me-2 d-flex justify-content-center justify-content-sm-start mb-3 mb-sm-0">
+                                                <img src="./images/un-logo (10).png" alt="" style="width: 100px;">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="card-head">
+                                                <div class=" mb-2 text-center text-lg-start" style="font-size: 12px; font-weight: 500;"> Online Manipal</div>
+                                            </div>
+                                            <div class="card-info d-flex gap-2 justify-content-center justify-content-sm-start">
+                                                <div class="raiting">
+                                                          4.8
+                                                </div>
+                                                <div class="reviews">
+                                                         (850 Reviews)
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                       </div>
+                                </div>
+                                <div class="card-footer d-flex justify-content-center  justify-content-sm-between align-items-center ">
+                                      <div class="d-none d-md-block">
+                                        <i class="bi bi-patch-check-fill"></i>   Punjab
+                                      </div>
+                                      <div style=" font-size: 12px;    background-color: #FFF; border: 1px solid #04BD6C; color: #04BD6C; padding: 5px; border-radius: 5px; z-index: 1; position: relative; top: -5px;" class="mt-2 mt-sm-0" >
+                                              16 Courses
+                                      </div>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="swiper-slide slide-card">
+                            <div class="slider-card">
+                              <div class="card-body px-2 py-3">
+                                     <div class="row ">
+                                      <div class="col-md-4 ">
+                                          <div class="card-img me-2 d-flex justify-content-center justify-content-sm-start mb-3 mb-sm-0">
+                                              <img src="./images/un-logo (18).png" alt="" style="width: 100px;">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-8">
+                                          <div class="card-head">
+                                              <div class=" mb-2 text-center text-lg-start" style="font-size: 12px; font-weight: 500;">Aligarh Muslim University</div>
+                                          </div>
+                                          <div class="card-info d-flex gap-2 justify-content-center justify-content-sm-start">
+                                              <div class="raiting">
+                                                        4.4
+                                              </div>
+                                              <div class="reviews">
+                                                       (490 Reviews)
+                                              </div>
+
+                                          </div>
+                                      </div>
+                                     </div>
+                              </div>
+                              <div class="card-footer d-flex justify-content-center  justify-content-sm-between align-items-center ">
+                                    <div class="d-none d-md-block">
+                                      <i class="bi bi-patch-check-fill"></i>  Aligarh
+                                    </div>
+                                    <div style=" font-size: 12px;    background-color: #FFF; border: 1px solid #04BD6C; color: #04BD6C; padding: 5px; border-radius: 5px; z-index: 1; position: relative; top: -5px;" class="mt-2 mt-sm-0" >
+                                            22 Courses
+                                    </div>
+                              </div>
+                          </div>
+                          </div>
+                          <div class="swiper-slide slide-card">
+                            <div class="slider-card">
+                              <div class="card-body px-2 py-3">
+                                     <div class="row ">
+                                      <div class="col-md-4 ">
+                                          <div class="card-img me-2 d-flex justify-content-center justify-content-sm-start mb-3 mb-sm-0">
+                                              <img src="./images/un-logo (8).png" alt="" style="width: 100px;">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-8">
+                                          <div class="card-head">
+                                              <div class=" mb-2 text-center text-lg-start" style="font-size: 12px; font-weight: 500;"> Nalanda University</div>
+                                          </div>
+                                          <div class="card-info d-flex gap-2 justify-content-center justify-content-sm-start">
+                                              <div class="raiting">
+                                                        4.8
+                                              </div>
+                                              <div class="reviews">
+                                                       (850 Reviews)
+                                              </div>
+
+                                          </div>
+                                      </div>
+                                     </div>
+                              </div>
+                              <div class="card-footer d-flex justify-content-center  justify-content-sm-between align-items-center ">
+                                    <div class="d-none d-md-block">
+                                      <i class="bi bi-patch-check-fill"></i>   Nalanda
+                                    </div>
+                                    <div style=" font-size: 12px;    background-color: #FFF; border: 1px solid #04BD6C; color: #04BD6C; padding: 5px; border-radius: 5px; z-index: 1; position: relative; top: -5px;" class="mt-2 mt-sm-0" >
+                                            26 Courses
+                                    </div>
+                              </div>
+                          </div>
+                          </div>
+                          <div class="swiper-slide slide-card">
+                            <div class="slider-card">
+                              <div class="card-body px-2 py-3">
+                                     <div class="row ">
+                                      <div class="col-md-4 ">
+                                          <div class="card-img me-2 d-flex justify-content-center justify-content-sm-start mb-3 mb-sm-0">
+                                              <img src="./images/un-logo (6).png" alt="" style="width: 100px;">
+                                          </div>
+                                      </div>
+                                      <div class="col-md-8">
+                                          <div class="card-head">
+                                              <div class=" mb-2 text-center text-lg-start" style="font-size: 12px; font-weight: 500;"> Delhi University</div>
+                                          </div>
+                                          <div class="card-info d-flex gap-2 justify-content-center justify-content-sm-start">
+                                              <div class="raiting">
+                                                        4.9
+                                              </div>
+                                              <div class="reviews">
+                                                       (906 Reviews)
+                                              </div>
+
+                                          </div>
+                                      </div>
+                                     </div>
+                              </div>
+                              <div class="card-footer d-flex justify-content-center  justify-content-sm-between align-items-center ">
+                                    <div class="d-none d-md-block">
+                                      <i class="bi bi-patch-check-fill"></i>   Delhi
+                                    </div>
+                                    <div style=" font-size: 12px;    background-color: #FFF; border: 1px solid #04BD6C; color: #04BD6C; padding: 5px; border-radius: 5px; z-index: 1; position: relative; top: -5px;" class="mt-2 mt-sm-0" >
+                                            22 Courses
+                                    </div>
+                              </div>
+                          </div>
+                          </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      
+                        <div class="swiper-pagination d-none d-md-block" ></div>
+                      </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    <!-- info section end -->
+     
+     <!-- banner start  -->
+ <div class="d-flex justify-content-center"> <img src="./images/0.png"  style="width: 100%;" alt="" data-aos="zoom-in"  style="transition-duration: .5s;"></div>
+     <!-- banner end -->
+
+    <!-- courses section start -->
+
+    <section class="py-5" style="  background: linear-gradient(135deg, #f2f5f7, #ffffff);">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-2 ">
+                <div class="col-lg-8 col-xxl-7 course-header">
+                    <h2 class="text-center">Find The Perfect College For You <span style="color: #CF3425; position: absolute; ">.</span></h2>
+                    <div class=" d-flex justify-content-center align-items-center  gap-1 gap-md-0 gap-lg-0 gap-xl-0">
+                        <span class="text-bar"></span>
+                        Discover top colleges, exams, and opportunities in your preferred field.
+                        <span class="text-bar"></span>
+                    </div>
+                </div >
+            </div>
+                <div class="row mb-2" >
+                    <div class="col-lg-12 col-xxl-7 " style="width: 100%;">
+                        <div class="slider-wrapper">
+                            <button class="arrow-btn prev" style="visibility: hidden;">&#8592;</button>
+                          
+                            <div class="slider-container" id="sliderContainer">
+                              <div class="text-slider" id="textSlider">
+                                <div class="text-item active">Engineering</div>
+                                <div class="text-item">Management</div>
+                                <div class="text-item">Commerce and Banking</div>
+                                <div class="text-item">Medical</div>
+                                <div class="text-item">Science</div>
+                                <div class="text-item">Hotel Management</div>
+                                <div class="text-item">Information Technology</div>
+                                <div class="text-item">Arts & Humanities</div>
+                                <div class="text-item">Agriculture</div>
+                                <div class="text-item">Law</div>
+                                <div class="text-item">Pharmacy</div>
+                                <div class="text-item">Education</div>
+                              </div>
+                            </div>
+                          
+                            <button class="arrow-btn next">&#8594;</button>
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div id="collegeContainer" class="grid-wrapper"></div>
+                    </div>
+                </div>
+    
+        </div>
+    </section>
+ 
+    <!-- courses section end -->
+       <!-- hero start  -->
+       <section class="hero text-center text-md-start">
+        <div class="container d-md-flex align-items-center justify-content-between">
+          <div class="content col-md-6">
+            <h1>Online <span style="color: #0d6efd;">Education</span></h1>
+            <h4>Get Promo Up To 30% Off This Year Only</h4>
+            <p><strong>Business</strong> | <strong>Marketing</strong> | <strong>Accounting</strong></p>
+            <a class="modern mt-3">Register Now</a>
+          </div>
+          <div class="hero-images col-md-6 text-center mt-4 mt-md-0 d-flex  row">
+         <div data-aos="fade-up" class="col-6">   <img src="./images/scholarship_16405407.png" alt="Education">Sclorships</div>
+           <div data-aos="fade-up" class="col-6"> <img src="https://cdn-icons-png.flaticon.com/512/2721/2721265.png" alt="Laptop">Various Courses</div>
+           <div data-aos="fade-up" class="col-6"> <img src="./images/legal-document_1890398.png" alt="Globe">Certifications</div>
+          <div data-aos="fade-up" class="col-6">  <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Teacher">Best Faculty</div>
+          </div>
+        </div>
+      </section>
+       <!-- hero end -->
+    <!-- searched collections  start -->
+    <section class="py-sm-5   ">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-2 ">
+                <div class="col-lg-8 col-xxl-7 course-header">
+                    <h2 class="text-center">Most searched collections by Students <span style="color: #CF3425; position: absolute; ">.</span></h2>
+                    <div class=" d-flex justify-content-center align-items-center  gap-1 gap-md-0 gap-lg-0 gap-xl-0">
+                        <span class="text-bar"></span>
+                        Discover top colleges, exams, and opportunities in your preferred field.
+                        <span class="text-bar"></span>
+                    </div>
+                </div >
+            </div>
+            <div class="row">
+                <div class="col">
+    <div class="image-slider-wrapper">
+        <button class="image-nav prev">&#10094;</button>
+    
+        <div class="image-slider-track" id="imageSliderTrack">
+          <div class="slide-box" id="gradient1" style="background-image: url('../images/collection-img (1).png');">
+            <div class="slide-text2"> Best Placement</div>
+            <div class="slide-text">View College <i class="bi bi-caret-right-fill"></i></div>
+          </div>
+          <div class="slide-box" id="gradient2" style="background-image: url('../images/collection-img (2).png');">
+            <div class="slide-text2"> College Under 5 Lakhs</div>
+            <div class="slide-text">View College<i class="bi bi-caret-right-fill"></i></div>
+          </div>
+          <div class="slide-box" id="gradient3" style="background-image: url('../images/collection-img (3).png');">
+            <div class="slide-text2">Top NIRF Colleges</div>
+            <div class="slide-text">View College<i class="bi bi-caret-right-fill"></i></div>
+          </div>
+          <div class="slide-box" id="gradient4" style="background-image: url('../images/collection-img (4).png');">
+            <div class="slide-text2"> Best Reviews</div>
+            <div class="slide-text">View College<i class="bi bi-caret-right-fill"></i></div>
+          </div>
+          <div class="slide-box" id="gradient5" style="background-image: url('../images/collection-img (2).png');">
+            <div class="slide-text2"> Best Private College</div>
+            <div class="slide-text">View College<i class="bi bi-caret-right-fill"></i></div>
+          </div>
+        </div>
+    
+        <button class="image-nav next">&#10095;</button>
+    
+        <div style="display: flex; justify-content: center;">
+          <div class="slider-progress-bar">
+            <div class="progress" id="sliderProgress"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+
+    <!-- searched collections end -->
+     
+    <!-- section control start -->
+    <div class="container section-control position-relative overflow-hidden" data-aos="zoom-in"  style="transition-duration: .5s;">
+        <!-- Decorative SVG -->
+        <svg class="decorative-svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+            <path d="M0.00,49.98 C150.00,150.00 349.67,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgba(255,255,255,0.1);"></path>
+        </svg>
+        <!-- Top Decorative Wave -->
+<svg class="decorative-svg-top" viewBox="0 0 500 150" preserveAspectRatio="none">
+    <path d="M0.00,49.98 C150.00,150.00 349.67,-50.00 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: rgba(255,255,255,0.05);"></path>
+  </svg>
+  
+  <!-- Bottom Curve SVG -->
+  <svg class="decorative-svg-bottom" viewBox="0 0 500 150" preserveAspectRatio="none">
+    <path d="M0,0 C150,100 350,0 500,100 L500,150 L0,150 Z" style="stroke: none; fill: rgba(255,255,255,0.08);"></path>
+  </svg>
+  
+  <!-- Floating Circles -->
+  <div class="floating-circle circle-1"></div>
+  <div class="floating-circle circle-2"></div>
+  <div class="floating-circle circle-3"></div>
+  
+    
+        <div class="row position-relative z-1 py-4 px-2">
+            <div class="col-md-8 d-flex align-items-center justify-content-center justify-content-md-start gap-3 gap-md-4 gap-lg-5">
+                <div class="section-control-top d-flex justify-content-center justify-content-md-start align-items-center gap-2 gap-md-3 gap-lg-4 ms-md-5">
+                    <div class="control-btn1 fw-semibold fs-5">Still confused explore wide range of online universities
+                    </div>
+                    <button class="control-btn2 shadow">Compare University <i class="bi bi-arrow-right ms-2"></i></button>
+                </div>
+            </div>
+            <div class="col-md-4 position-relative">
+                <div class="section-control-end">
+                  <!-- Decorative SVG background -->
+                  <svg class="blob-bg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#ffffff10" d="M41.6,-67.4C54.3,-58.4,65.5,-45.6,71.4,-30.8C77.3,-15.9,77.9,0.9,71.1,15.6C64.3,30.3,50.1,42.9,35.7,52.2C21.3,61.6,6.6,67.7,-9.3,70.3C-25.2,72.9,-42.4,72,-52.4,61.3C-62.5,50.7,-65.5,30.2,-65.3,11.1C-65.2,-8,-61.8,-25.8,-52.7,-38.6C-43.7,-51.4,-28.9,-59.2,-13.1,-65.6C2.6,-71.9,18.5,-77,33.2,-73.2C47.9,-69.4,60.5,-56.3,41.6,-67.4Z" transform="translate(100 100)" />
+                  </svg>
+              
+                  <!-- Main image -->
+                  <img
+                    src="./images/happy-women-learning-language-online-isolated-flat-vector-illustration-cartoon-female-characters-taking-individual-lessons-through-messenger-education-digital-technology-concept.png"
+                    alt="Happy learning"
+                    class="img-fluid main-img"
+                  />
+                </div>
+              </div>
+        </div>
+    </div>
+    <!-- section control end -->
+
+    <!-- college ranking start -->
+    <section class="pt-2 pt-md-5 ">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-2 ">
+                <div class="col-lg-8 col-xxl-7 course-header">
+                    <h2 class="text-center">🎓 College Rankings 2025 <span style="color: #CF3425; position: absolute; ">.</span></h2>
+                    <div class=" d-flex justify-content-center align-items-center  gap-1 gap-md-0 gap-lg-0 gap-xl-0">
+                        <span class="text-bar"></span>
+                        Discover top colleges bashed on ranking.
+                        <span class="text-bar"></span>
+                    </div>
+                </div >
+            </div>
+                <div class="row" style="padding-left: 0px !important ;padding-right: 0px !important;">
+                    <div class="page-wrapper">
+
+                        <div class="rank-container">
+                          <!-- Filters -->
+                          <div class="filters">
+                            <div class="filter-group">
+                              <label for="ranking">Ranking:</label>
+                              <select id="ranking">
+                                <option>2024</option>
+                                <option>2023</option>
+                                <option>2022</option>
+                              </select>
+                            </div>
+                    
+                            <div class="filter-group">
+                              <label for="agency">Agency:</label>
+                              <div class="agency-buttons">
+                                <button class="active">India Today</button>
+                                <button>The Week</button>
+                                <button>NIRF</button>
+                                <button>Outlook</button>
+                                <button>IIRF</button>
+                                <button>TOI</button>
+                                <button>NIRF Innovation</button>
+                              </div>
+                            </div>
+                          </div>
+                    
+                          <!-- Table -->
+                          <div class="table-wrapper">
+                            <table>
+                              <thead>
+                                <tr>
+                                  <th>College</th>
+                                  <th>Ranking</th>
+                                  <th>Streams</th>
+                                </tr>
+                              </thead>
+                              <tbody></tbody>
+                            </table>
+                          </div>
+                        </div>
+                        <script src="college_rank.js"></script>
+                      </div>
+                </div>
+        </div>
+    </section>
+     <!-- coleege ranking end -->
+     
+     <!-- ad-slider start -->
+     <div class="Feature-slider ">
+        <div class="Feature-slide-track">
+          <div class="inner-slide">
+            <img src="./images/scholarship_16405407.png" height="70" width="70" alt="" />
+            <div>Scholarships</div>
+          </div>
+          <div class="inner-slide">
+            <img src="./images/school_15506579.png" height="70" width="70" alt="" />
+            <div>Wide Range of Universities</div>
+          </div>
+          <div class="inner-slide">
+            <img src="./images/degrees_3663813.png" height="70" width="70" alt="" />
+            <div>Compare Universities</div>
+          </div>
+          <div class="inner-slide">
+            <img src="./images/customer-service_1803047.png" height="70" width="70" alt="" />
+            <div>Free Placement Assistance</div>
+          </div>
+          <div class="inner-slide">
+            <img src="./images/call-center_7752720.png" height="70" width="70" alt="" />
+            <div>24/7 Free Counselling</div>
+          </div>
+          <div class="inner-slide">
+            <img src="./images/pay_625599.png" height="70" width="70" alt="" />
+            <div>EMI Options</div>
+          </div>
+          <div class="inner-slide">
+            <img src="./images/school_17649953.png" height="70" width="70" alt="" />
+            <div>Private College</div>
+          </div>
+          <div class="inner-slide">
+            <img src="./images/university_1503446.png" height="70" width="70" alt="" />
+            <div>Govt. College</div>
+          </div>
+          <div class="inner-slide">
+            <img src="./images/rank_7634752.png" height="70" width="70" alt="" />
+            <div>NAAC Ranking</div>
+          </div>
+          
+          <div class="inner-slide">
+            <img src="./images/scholarship_16405407.png" height="70" width="70" alt="" />
+            <div>Scholarships</div>
+          </div>
+          <div class="inner-slide">
+            <img src="./images/school_15506579.png" height="70" width="70" alt="" />
+            <div>Wide Range of Universities</div>
+          </div>
+          <div class="inner-slide">
+            <img src="./images/degrees_3663813.png" height="70" width="70" alt="" />
+            <div>Compare Universities</div>
+          </div>
+          <div class="inner-slide">
+            <img src="./images/customer-service_1803047.png" height="70" width="70" alt="" />
+            <div>Free Placement Assistance</div>
+          </div>
+          <div class="inner-slide">
+            <img src="./images/call-center_7752720.png" height="70" width="70" alt="" />
+            <div>24/7 Free Counselling</div>
+          </div>
+          <div class="inner-slide">
+            <img src="./images/pay_625599.png" height="70" width="70" alt="" />
+            <div>EMI Options</div>
+          </div>
+          <div class="inner-slide">
+            <img src="./images/school_17649953.png" height="70" width="70" alt="" />
+            <div>Private College</div>
+          </div>
+          <div class="inner-slide">
+            <img src="./images/university_1503446.png" height="70" width="70" alt="" />
+            <div>Govt. College</div>
+          </div>
+          <div class="inner-slide">
+            <img src="./images/rank_7634752.png" height="70" width="70" alt="" />
+            <div>NAAC Ranking</div>
+          </div>
+        </div>
+      </div>
+     <!-- ad-slider end -->
+     
+     <!-- popular college start -->
+      <section style="background-color: #f2f5f7;" class="py-3 py-md-5">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-2 ">
+                <div class="col-lg-8 col-xxl-7 course-header">
+                    <h2 class="text-center">Online & Distance Education Universities <span style="color: #CF3425; position: absolute; ">.</span></h2>
+                    <div class=" d-flex justify-content-center align-items-center  gap-1 gap-md-0 gap-lg-0 gap-xl-0">
+                        <span class="text-bar"></span>
+                        Discover India's leading universities offering comprehensive courses through online and distance education to shape your future.
+                        <span class="text-bar"></span>
+                    </div>
+                </div >
+            </div>
+        </div>
+     <div class="college-grid">
+        <div class="college-card" data-aos="zoom-in"  style="transition-duration: .5s;">
+          <img src="./images/un-logo (16).png" alt="JIMS Logo" class="college-logo" />
+          <h3 class="college-name">LPU Online</h3>
+          <p class="college-location">Ludhiana, Punjab...</p>
+          <p class="college-fees"><strong>Total Fees:</strong> 9.9 L</p>
+          <p class="college-rating">
+            <strong>Course Rating:</strong>
+            <span class="stars">★★★★☆</span>
+            <span class="count">(345)</span>
+          </p>
+        </div>
+        <div class="college-card" data-aos="zoom-in"  style="transition-duration: .5s;">
+            <img src="images/un-logo (11).png" alt="JIMS Logo" class="college-logo" />
+            <h3 class="college-name">Amity University</h3>
+            <p class="college-location">Rohini, Delhi</p>
+            <p class="college-fees"><strong>Total Fees:</strong> 9.9 L</p>
+            <p class="college-rating">
+              <strong>Course Rating:</strong>
+              <span class="stars">★★★★☆</span>
+              <span class="count">(345)</span>
+            </p>
+          </div>
+          <div class="college-card" data-aos="zoom-in"  style="transition-duration: .5s;">
+            <img src="images/un-logo (14).png" alt="JIMS Logo" class="college-logo" />
+            <h3 class="college-name">Sharda University</h3>
+            <p class="college-location">Rohini, Delhi</p>
+            <p class="college-fees"><strong>Total Fees:</strong> 9.9 L</p>
+            <p class="college-rating">
+              <strong>Course Rating:</strong>
+              <span class="stars">★★★★☆</span>
+              <span class="count">(345)</span>
+            </p>
+          </div>
+          <div class="college-card" data-aos="zoom-in"  style="transition-duration: .5s;">
+            <img src="images/un-logo (10).png" alt="JIMS Logo" class="college-logo" />
+            <h3 class="college-name">Online Manipal</h3>
+            <p class="college-location">Rohini, Delhi</p>
+            <p class="college-fees"><strong>Total Fees:</strong> 9.9 L</p>
+            <p class="college-rating">
+              <strong>Course Rating:</strong>
+              <span class="stars">★★★★☆</span>
+              <span class="count">(345)</span>
+            </p>
+          </div>
+          <div class="college-card" data-aos="zoom-in"  style="transition-duration: .5s;">
+            <img src="images/un-logo (6).webp" alt="JIMS Logo" class="college-logo" />
+            <h3 class="college-name">IIM Banglore</h3>
+            <p class="college-location">Rohini, Delhi</p>
+            <p class="college-fees"><strong>Total Fees:</strong> 9.9 L</p>
+            <p class="college-rating">
+              <strong>Course Rating:</strong>
+              <span class="stars">★★★★☆</span>
+              <span class="count">(345)</span>
+            </p>
+          </div>
+          <div class="college-card" data-aos="zoom-in"  style="transition-duration: .5s;">
+            <img src="images/un-logo (5).webp" alt="JIMS Logo" class="college-logo" />
+            <h3 class="college-name">IIM Shillong</h3>
+            <p class="college-location">Rohini, Delhi</p>
+            <p class="college-fees"><strong>Total Fees:</strong> 9.9 L</p>
+            <p class="college-rating">
+              <strong>Course Rating:</strong>
+              <span class="stars">★★★★☆</span>
+              <span class="count">(345)</span>
+            </p>
+          </div>
+          <div class="college-card" data-aos="zoom-in"  style="transition-duration: .5s;">
+            <img src="images/un-logo (6).png" alt="JIMS Logo" class="college-logo" />
+            <h3 class="college-name">University of Delhi</h3>
+            <p class="college-location">Rohini, Delhi</p>
+            <p class="college-fees"><strong>Total Fees:</strong> 9.9 L</p>
+            <p class="college-rating">
+              <strong>Course Rating:</strong>
+              <span class="stars">★★★★☆</span>
+              <span class="count">(345)</span>
+            </p>
+          </div>
+          <div class="college-card" data-aos="zoom-in"  style="transition-duration: .5s;">
+            <img src="images/un-logo (8).png" alt="JIMS Logo" class="college-logo" />
+            <h3 class="college-name">Nalanda Open University</h3>
+            <p class="college-location">Rohini, Delhi</p>
+            <p class="college-fees"><strong>Total Fees:</strong> 9.9 L</p>
+            <p class="college-rating">
+              <strong>Course Rating:</strong>
+              <span class="stars">★★★★☆</span>
+              <span class="count">(345)</span>
+            </p>
+          </div>
+      </div>
+    </section>
+      
+      <!-- popular college end -->
+
+      <!-- card section start -->
+      <div class="card-carousel-container" id="cardsliderContainer">
+        <button class="card-carousel-btn left" id="cardprevBtn"><i class="fas fa-chevron-left"></i></button>
+        <button class="card-carousel-btn right" id="cardnextBtn"><i class="fas fa-chevron-right"></i></button>
+      
+        <div class="cardslider-track" id="sliderTrack">
+          <div class="cardslide">
+            <div class="carousel-card blue">
+              <div class="card-content">
+                <div class="text-content">
+                  <h2>Get Free Expert Counselling</h2>
+                  <p>Personalized guidance for your career path from industry experts.</p>
+                  <div class="highlight">2000+ benefited</div>
+                  <div><button class="action-btn">Get Free Counselling</button></div>
+                </div>
+                <img src="../images/interview.svg" alt="Counselling">
+              </div>
+            </div>
+          </div>
+      
+          <div class="cardslide">
+            <div class="carousel-card orange">
+              <div class="card-content">
+                <div class="text-content">
+                  <h2>Placement Assistance That Works</h2>
+                  <p>Land your dream job with our expert help and interview preparation.</p>
+                  <div class="highlight">100+ students placed</div>
+                  <div><button class="action-btn">Get Assistance</button></div>
+                </div>
+                <img src="../images/working.svg" alt="Placement">
+              </div>
+            </div>
+          </div>
+      
+          <div class="cardslide">
+            <div class="carousel-card blue">
+              <div class="card-content">
+                <div class="text-content">
+                  <h2>Compare Top Universities</h2>
+                  <p>100+ universities worldwide and one easy comparison tool.</p>
+                  <div class="highlight">100+ Universities</div>
+                  <div><button class="action-btn">View Universities</button></div>
+                </div>
+                <img src="../images/file-bundle.svg" alt="University">
+              </div>
+            </div>
+          </div>
+      
+          <div class="cardslide">
+            <div class="carousel-card orange">
+              <div class="card-content">
+                <div class="text-content">
+                  <h2>Flexible EMI Options</h2>
+                  <p>Study now, pay later with our flexible and customized  payment plans.</p>
+                  <div class="highlight">Multiple Plans</div>
+                 <div> <button class="action-btn">Explore EMI</button></div>
+                </div>
+                <img src="../images/book.svg" alt="EMI">
+              </div>
+            </div>
+          </div>
+      
+          <div class="cardslide">
+            <div class="carousel-card blue">
+              <div class="card-content">
+                <div class="text-content">
+                  <h2>Private & Govt. Colleges</h2>
+                  <p>Choose what fits your goals from our verified institutes over world.</p>
+                  <div class="highlight">Verified Institutes</div>
+                  <div><button class="action-btn">Browse Colleges</button></div>
+                </div>
+                <img src="../images/money.svg" alt="Colleges">
+              </div>
+            </div>
+          </div>
+      
+          <div class="cardslide">
+            <div class="carousel-card orange">
+              <div class="card-content">
+                <div class="text-content">
+                  <h2>Scholarship Guidance</h2>
+                  <p>Discover and apply for scholarships that match your profile.</p>
+                  <div class="highlight">50+ Scholarships</div>
+                 <div> <button class="action-btn">Find Scholarships</button></div>
+                </div>
+                <img src="../images/education.svg" alt="Scholarship">
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <div class="carousel-dots" id="dotsContainer"></div>
+      </div>
+     
+      <!-- card section end -->
+    
+      <!-- program section start  -->
+      <section class="py-5 ">
+        <div class="container">
+            <div class="row justify-content-center text-center mb-2 ">
+                <div class="col-lg-8 col-xxl-7 course-header">
+                    <h2 class="text-center">Explore various Programs<span style="color: #CF3425; position: absolute; ">.</span></h2>
+                    <div class=" d-flex justify-content-center align-items-center  gap-1 gap-md-0 gap-lg-0 gap-xl-0">
+                        <span class="text-bar"></span>
+                        Discover top colleges, exams, and opportunities in your preferred field.
+                        <span class="text-bar"></span>
+                    </div>
+                </div >
+            </div>
+            <div class="row">
+                <div class="col">
+                  <div class="explore-card-grid">
+
+                    <!-- Card 1 -->
+                    <div class="explore-card" data-aos="zoom-in"  style="transition-duration: .5s;">
+                      <div class="explore-card-header">
+                        Ranking
+                        <img src="../images/rank_7634752.png" alt="icon">
+                      </div>
+                      <div class="explore-card-body">
+                        College ranked based on real data
+                        <div class="tag-container">
+                          <div class="tag">India Today - 451</div>
+                          <div class="tag">Outlook - 311</div>
+                          <div class="tag">NIRF - 449</div>
+                          <div class="tag">IIRF - 181</div>
+                        </div>
+                      </div>
+                      <div class="explore-card-footer">Top Ranked Colleges in India <i class="fas fa-chevron-right"></i></div>
+                    </div>
+                
+                    <!-- Card 2 -->
+                    <div class="explore-card" data-aos="zoom-in"  style="transition-duration: .5s;">
+                      <div class="explore-card-header">
+                        Find Colleges
+                        <img src="../images/scholarship_16405407.png" alt="icon">
+                      </div>
+                      <div class="explore-card-body">
+                        Discover 19000+ colleges via preferences
+                        <div class="tag-container">
+                          <div class="tag">BCom in India</div>
+                          <div class="tag">BCom in Bangalore</div>
+                        </div>
+                      </div>
+                      <div class="explore-card-footer">Discover Top Colleges in India <i class="fas fa-chevron-right"></i></div>
+                    </div>
+                
+                    <!-- Card 3 -->
+                    <div class="explore-card" data-aos="zoom-in"  style="transition-duration: .5s;">
+                      <div class="explore-card-header">
+                        Compare Colleges
+                        <img src="../images/degrees_3663813.png" alt="icon">
+                      </div>
+                      <div class="explore-card-body">
+                        Compare on the basis of rank, fees, etc.
+                        <div class="tag-container">
+                          <div class="tag">KMC vs Loyola</div>
+                          <div class="tag">Ramjas vs Loyola</div>
+                        </div>
+                      </div>
+                      <div class="explore-card-footer">Compare Colleges <i class="fas fa-chevron-right"></i></div>
+                    </div>
+                
+                    <!-- Card 4 -->
+                    <div class="explore-card" data-aos="zoom-in"  style="transition-duration: .5s;">
+                      <div class="explore-card-header">
+                        Exams
+                        <img src="../images/school_15506579.png" alt="icon">
+                      </div>
+                      <div class="explore-card-body">
+                        Know more about your exams
+                        <div class="tag-container">
+                          <div class="tag">IPU CET</div>
+                          <div class="tag">NPAT</div>
+                          <div class="tag">BHU UET</div>
+                          <div class="tag">JUEE</div>
+                        </div>
+                      </div>
+                      <div class="explore-card-footer">Check All Exams <i class="fas fa-chevron-right"></i></div>
+                    </div>
+                
+                    <!-- Card 5 -->
+                    <div class="explore-card" data-aos="zoom-in"  style="transition-duration: .5s;">
+                      <div class="explore-card-header">
+                        College Predictor
+                        <img src="../images/university_1503446.png" alt="icon">
+                      </div>
+                      <div class="explore-card-body">
+                        Know your college admission chances
+                        <div class="tag-container">
+                          <div class="tag">CUET</div>
+                          <div class="tag">AILET</div>
+                          <div class="tag">DAVV CET</div>
+                        </div>
+                      </div>
+                      <div class="explore-card-footer">Find Where You May Get In <i class="fas fa-chevron-right"></i></div>
+                    </div>
+                
+                    <!-- Card 6 -->
+                    <div class="explore-card" data-aos="zoom-in"  style="transition-duration: .5s;">
+                      <div class="explore-card-header">
+                        Course Finder
+                        <img src="../images/discussion_10789668.png" alt="icon">
+                      </div>
+                      <div class="explore-card-body">
+                        Discover top courses in Indian Colleges 2025
+                        <div class="tag-container">
+                          <div class="tag">General - 69</div>
+                          <div class="tag">Accounting - 50</div>
+                          <div class="tag">Finance - 45</div>
+                        </div>
+                      </div>
+                      <div class="explore-card-footer">Get Top Courses <i class="fas fa-chevron-right"></i></div>
+                    </div>
+                
+                  </div>
+    
+    </div>
+</div>
+</section>
+      <!-- program sdection end  -->
+
+         <!-- section control start -->
+    <div data-aos="zoom-in"  style="transition-duration: .5s; background-color: #767cdf !important;"class="container section-control position-relative overflow-hidden"  >
+      <!-- Decorative SVG -->
+      <svg class="decorative-svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+          <path d="M0.00,49.98 C150.00,150.00 349.67,-50.00 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: rgba(255,255,255,0.1);"></path>
+      </svg>
+      <!-- Top Decorative Wave -->
+<svg class="decorative-svg-top" viewBox="0 0 500 150" preserveAspectRatio="none">
+  <path d="M0.00,49.98 C150.00,150.00 349.67,-50.00 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: rgba(255,255,255,0.05);"></path>
+</svg>
+
+<!-- Bottom Curve SVG -->
+<svg class="decorative-svg-bottom" viewBox="0 0 500 150" preserveAspectRatio="none">
+  <path d="M0,0 C150,100 350,0 500,100 L500,150 L0,150 Z" style="stroke: none; fill: rgba(255,255,255,0.08);"></path>
+</svg>
+
+<!-- Floating Circles -->
+<div class="floating-circle circle-1"></div>
+<div class="floating-circle circle-2"></div>
+<div class="floating-circle circle-3"></div>
+
+  
+      <div class="row position-relative z-1 py-4 px-2">
+          <div class="col-md-8 d-flex align-items-center justify-content-center justify-content-md-start gap-3 gap-md-4 gap-lg-5">
+              <div class="section-control-top d-flex justify-content-center justify-content-md-start align-items-center gap-2 gap-md-3 gap-lg-4 ms-md-5">
+                  <div class="control-btn1 fw-semibold fs-5">Still confused explore wide range of online universities
+                  </div>
+                  <button class="control-btn2 shadow">Compare University <i class="bi bi-arrow-right ms-2"></i></button>
+              </div>
+          </div>
+          <div class="col-md-4 position-relative">
+              <div class="section-control-end">
+                <!-- Decorative SVG background -->
+                <svg class="blob-bg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                  <path fill="#ffffff10" d="M41.6,-67.4C54.3,-58.4,65.5,-45.6,71.4,-30.8C77.3,-15.9,77.9,0.9,71.1,15.6C64.3,30.3,50.1,42.9,35.7,52.2C21.3,61.6,6.6,67.7,-9.3,70.3C-25.2,72.9,-42.4,72,-52.4,61.3C-62.5,50.7,-65.5,30.2,-65.3,11.1C-65.2,-8,-61.8,-25.8,-52.7,-38.6C-43.7,-51.4,-28.9,-59.2,-13.1,-65.6C2.6,-71.9,18.5,-77,33.2,-73.2C47.9,-69.4,60.5,-56.3,41.6,-67.4Z" transform="translate(100 100)" />
+                </svg>
+            
+                <!-- Main image -->
+                <img
+                  src="./images/virtual-graduation-ceremony-with-university-graduate.png"
+                  alt="Happy learning"
+                  class="img-fluid main-img"
+                />
+              </div>
+            </div>
+      </div>
+  </div>
+  
+
+  <!-- section control end -->
+
+  <!-- achivement start -->
+  <section class="achievements-section">
+    <h2>Our Achievements</h2>
+
+    <div class="swiper achievements-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./images/achivement (1).webp" alt="">
+          <div class="slide-content">
+            <h3>DMA Trailblazers 2023</h3>
+            <p>Best Education and Skill Development Campaign</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./images/achivement (2).webp" alt="">
+          <div class="slide-content">
+            <h3>Education Innovation Awards</h3>
+            <p>Entrepreneur India 2022 and 2023</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <img src="./images/achivement (3).webp" alt="">
+          <div class="slide-content">
+            <h3>CX Excellence Awards</h3>
+            <p>Best Customer Experience Initiative</p>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+            <img src="./images/achivement (4).webp" alt="">
+            <div class="slide-content">
+              <h3>CX Excellence Awards</h3>
+              <p>Best Customer Experience Initiative</p>
+            </div>
+          </div>
+
+        <!-- Add more slides here if needed -->
+      </div>
+
+      <!-- Arrows -->
+      <div class="swiper-button-prev achievements-prev"></div>
+      <div class="swiper-button-next achievements-next"></div>
+    </div>
+  </section>
+
+<!-- achivement end -->
+  
+<!-- marquee start  -->
+<div class="marquee">
+  <ul class="marquee-content">
+    <li><i class="fas fa-credit-card"></i>EMI Options</li>
+    <li><i class="fas fa-headset"></i>24/7 Free Counselling</li>
+    <li><i class="fas fa-briefcase"></i>Free Placement Assistance</li>
+    <li><i class="fas fa-university"></i>Compare Universities</li>
+    <li><i class="fas fa-certificate"></i>Accredited Universities</li>
+    <li><i class="fas fa-graduation-cap"></i>Scholarships Available</li>
+    <li><i class="fas fa-video"></i>Book Video Counselling</li>
+  </ul>
+</div>
+<!-- marquee end -->
+
+  <!-- faq-start -->
+  <section class="faq-section">
+    <div class="container">
+      <div class="row justify-content-around">
+        <div class="col-12 col-md-5">
+          <img src="./images/FAQs-rafiki.png" class="img-fluid">
+        </div>
+        <div class="col-12 col-md-5 d-flex align-items-center">
+          <div class="faq-body">
+            <h2 style="font-size: 30px;
+            font-weight: 700;
+            color: #111827;">Frequently Asked Questions</h2>
+            <div class="accordion">
+              <div class="accordion-item">
+                <button id="accordion-button-1" aria-expanded="false">
+                  <span class="accordion-title ps-1">How can I find the best college?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    You can use our search and filter options to browse colleges based on your preferred course, location, fees, rankings, and other criteria. You can also compare multiple colleges side-by-side.
+
+
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-2" aria-expanded="false">
+                  <span class="accordion-title ps-1">How do I stay updated about exams?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    We regularly update information on all major entrance exams like JEE, NEET, CAT, CLAT, and more. You can subscribe to our newsletter or notifications to get timely updates.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-3" aria-expanded="false">
+                  <span class="accordion-title ps-1">How do I know if a college is recognized and approved?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Every listed college is carefully vetted. We mention accreditation details such as AICTE, UGC, NAAC ratings, and approvals from relevant authorities in the college profiles.
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-4" aria-expanded="false">
+                  <span class="accordion-title ps-1">Is there any cost to use your services?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Most of our services, such as browsing colleges and courses, are absolutely free. However, premium counseling or application support services may have a nominal fee.
+
+
+                  </p>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <button id="accordion-button-5" aria-expanded="false">
+                  <span class="accordion-title ps-1">Can I read student reviews and ratings?</span>
+                  <span class="icon" aria-hidden="true"></span>
+                </button>
+                <div class="accordion-content">
+                  <p>
+                    Yes! We host verified student reviews and ratings for most colleges, helping you get honest feedback about campus life, placements, faculty, and more.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- faq-end -->
+
+    <!-- testimonail section start -->
+    <section class="testimonial-section mt-2 mt-lg-0 mt-sm-1 mt-md-0" id="testimonials">
+      <h2 class="testimonial-heading">Community Reviews</h2>
+      <p class="testimonial-subheading">See what our community has to say about their astrology experience!</p>
+      <div id="testimonial-slider" class="owl-carousel">
+        <div class="testimonial">
+          <div class="testimonial-container">
+            <div class="testimonial-card ">
+              <div class="testimonial-top">
+                <img src="./images/profile (1).jpg" alt="User" class="testimonial-img">
+                <div class="testimonial-content">
+                  <h4 class="testimonial-title">Accurate Predictions</h4>
+                  <p class="rating">★★★★★</p>
+                </div>
+              </div>
+              <p class="testimonial-text">The astrologer's insights were spot on! Their predictions truly helped me make
+                the right decisions.</p>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-top">
+                <img src="./images/profile (8).jpg" alt="User" class="testimonial-img">
+                <div class="testimonial-content">
+                  <h4 class="testimonial-title">Marriage Consultation</h4>
+                  <p class="rating">★★★★☆</p>
+                </div>
+              </div>
+              <p class="testimonial-text">Got clarity on my marriage prospects. Their guidance eased my doubts and brought
+                peace of mind.</p>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-top">
+                <img src="./images/profile (9).jpg" alt="User" class="testimonial-img">
+                <div class="testimonial-content">
+                  <h4 class="testimonial-title">Career Guidance</h4>
+                  <p class="rating">★★★★★</p>
+                </div>
+              </div>
+              <p class="testimonial-text">The career astrology session gave me clear direction on my job prospects. Highly
+                recommended!</p>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-top">
+                <img src="./images/profile (11).jpg" alt="User" class="testimonial-img">
+                <div class="testimonial-content">
+                  <h4 class="testimonial-title">Daily Horoscope</h4>
+                  <p class="rating">★★★★☆</p>
+                </div>
+              </div>
+              <p class="testimonial-text">Their daily horoscopes are incredibly accurate! I check them every morning.</p>
+            </div>
+          </div>
+        </div>
+  
+        <div class="testimonial">
+          <div class="testimonial-container">
+            <div class="testimonial-card">
+              <div class="testimonial-top">
+                <img src="./images/profile (5).jpg" alt="User" class="testimonial-img">
+                <div class="testimonial-content">
+                  <h4 class="testimonial-title">Love Compatibility</h4>
+                  <p class="rating">★★★★★</p>
+                </div>
+              </div>
+              <p class="testimonial-text">Their compatibility analysis helped me understand my partner better. Very
+                insightful!</p>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-top">
+                <img src="./images/profile (6).jpg" alt="User" class="testimonial-img">
+                <div class="testimonial-content">
+                  <h4 class="testimonial-title">Financial Astrology</h4>
+                  <p class="rating">★★★★☆</p>
+                </div>
+              </div>
+              <p class="testimonial-text">Astrological advice on finances was a game-changer! Now I invest with more
+                confidence.</p>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-top">
+                <img src="./images/profile (12).jpg" alt="User" class="testimonial-img">
+                <div class="testimonial-content">
+                  <h4 class="testimonial-title">Health Predictions</h4>
+                  <p class="rating">★★★★★</p>
+                </div>
+              </div>
+              <p class="testimonial-text">Their health predictions encouraged me to adopt a better lifestyle. Feeling much
+                better now!</p>
+            </div>
+            <div class="testimonial-card">
+              <div class="testimonial-top">
+                <img src="./images/profile (9).jpg" alt="User" class="testimonial-img">
+                <div class="testimonial-content">
+                  <h4 class="testimonial-title">Puja & Remedies</h4>
+                  <p class="rating">★★★★☆</p>
+                </div>
+              </div>
+              <p class="testimonial-text">The suggested remedies and puja helped bring positivity to my life. Truly
+                grateful!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- testimonialsection end -->
+       
+    <footer class="bg-black text-white pt-5 pb-4">
+      <div class="container text-sm-center text-md-start">
+        <div class="row">
+          <!-- Left: About & Social -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+          <img src="./images/logo.png" class="logo">
+            <p class="small">
+              Welcome to Yugedu, an online educational portal dedicated to assisting students to continue their higher studies to get into the top-notch universities across India.
+            </p>
+            <div class="mt-3 d-flex justify-content-start gap-3">
+              <a href="#" class=" d-flex align-items-center justify-content-center" style="background-color: white; border-radius: 50%; height: 30px ;width: 30px;"><i class="bi bi-facebook text-black " ></i></a>
+              <a href="#" class="d-flex align-items-center justify-content-center" style="background-color: white; border-radius: 50%; height: 30px ;width: 30px;"><i class="bi bi-instagram text-black"></i></a>
+              <a href="#" class="d-flex align-items-center justify-content-center" style="background-color: white; border-radius: 50%; height: 30px ;width: 30px;"><i class="bi bi-youtube text-black"></i></a>
+              <a href="#" class="d-flex align-items-center justify-content-center" style="background-color: white; border-radius: 50%; height: 30px ;width: 30px;"><i class="bi bi-linkedin text-black"></i></a>
+            </div>
+          </div>
+    
+          <!-- Important Links -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mb-4 col-6">
+            <h6 class="text-uppercase fw-bold border-bottom border-danger d-inline-block">Important Links</h6>
+            <ul class="list-unstyled small mt-2">
+              <li><a href="#" class="text-white text-decoration-none">Top Universities</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Top Courses</a></li>
+              <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Blogs</a></li>
+            </ul>
+          </div>
+    
+          <!-- MBA Specialisations -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mb-4 col-6">
+            <h6 class="text-uppercase fw-bold border-bottom border-danger d-inline-block">For MBA </h6>
+            <ul class="list-unstyled small mt-2">
+              <li><a href="#" class="text-white text-decoration-none">Operations Management</a></li>
+              <li><a href="#" class="text-white text-decoration-none">HR Management</a></li>
+              <li><a href="#" class="text-white text-decoration-none">IT Management</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Business Analytics</a></li>
+            </ul>
+          </div>
+    
+          <!-- Support -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mb-4 col-6">
+            <h6 class="text-uppercase fw-bold border-bottom border-danger d-inline-block">Support</h6>
+            <ul class="list-unstyled small mt-2">
+              <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Why YugEdu</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+              <li><a href="#" class="text-white text-decoration-none">Terms and Conditions</a></li>
+            </ul>
+          </div>
+    
+          <!-- Services -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mb-4 col-6">
+            <h6 class="text-uppercase fw-bold border-bottom border-danger d-inline-block">Services</h6>
+            <div class="small mt-2">
+              <div class="d-flex align-items-start justify-content-center gap-2 mb-2">
+                <span class="fs-5">🎧</span>
+                <span>Customer Support<br>+91 9310991267</span>
+              </div>
+              <div class="d-flex align-items-start justify-content-center gap-2">
+                <span class="fs-5">📧</span>
+                <span>Drop Us an Email<br>info@yugedu.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container">
+          <h5 class=" fw-bold mb-4">Top Courses</h5>
+      
+          <div class="d-flex flex-wrap  gap-2 text-center text-white small top-courses">
+            <span>Online Bachelor of Arts</span>
+            <span>Online BBA</span>
+            <span>Online BCA</span>
+            <span>Online BCom</span>
+            <span>Online MA</span>
+            <span>Online MBA</span>
+            <span>Online MCA</span>
+            <span>Online MCom</span>
+            <span>B.Tech For Working Professionals</span>
+            <span>M.Tech For Working Professionals</span>
+            <span>Online MSc</span>
+            <span>Online BA Honours</span>
+            <span>Online BCom Honours</span>
+            <span>Hospital and Health Care Management</span>
+            <span>Digital Marketing</span>
+            <span>PGCP in in Business Analytics</span>
+            <span>PGCP in Logistics and Supply Chain Management</span>
+            <span>Machine Learning And Generative AI</span>
+            <span>Executive Master of Business Administration (EMBA)</span>
+            <span>Advanced Diploma Program in Dietetics and Therapeutics Nutrition</span>
+            <span>Advanced Diploma Program in Drug Regulatory Affairs</span>
+            <span>Law</span>
+            <span>Pharmacy</span>
+            <span>Education</span>
+            <span>PhD</span>
+            <span>Diploma in Bakery and Confectionery Technology (DBCT)</span>
+            <span>Certificate Program in Modern Persian Language (CMPL)</span>
+            <span>Diploma Program in Professional Arabic (DPA)</span>
+            <span>Advanced Diploma in Medical Record Technology</span>
+            <span>Distance MBA</span>
+            <span>Global MBA</span>
+            <span>Dual MBA</span>
+            <span>Online PGDM</span>
+            <span>1 (one) Year MBA Online</span>
+            <span>Online MBA and Doctorate</span>
+            <span>Integrated Online MBA Program</span>
+            <span>Distance BA</span>
+            <span>Distance BBA</span>
+            <span>Distance BCA</span>
+            <span>Distance BCom</span>
+            <span>Online B.Sc Honours</span>
+            <span>Online BSc</span>
+            <span>Online BBA Honours</span>
+            <span>Distance BSc</span>
+            <span>BCA + MCA Integrated Online</span>
+            <span>BBA + MBA Integrated Online</span>
+            <span>BCom + MBA Integrated Online</span>
+            <span>B.Tech After Diploma</span>
+            <span>Online MBA after Diploma</span>
+            <span>Online BBA Dual</span>
+            <span>Part-Time BTech</span>
+          </div>
+        </div>
+    
+        <!-- Divider -->
+        <hr class="text-secondary my-4" />
+    
+        <!-- Bottom Course List -->
+        <div class="text-center text-secondary small">
+          <div class="d-flex flex-wrap justify-content-center gap-2">
+            <span>Online BBA</span> |
+            <span>Online MBA</span> |
+            <span>Digital Marketing</span> |
+            <span>Online MSc</span> |
+            <span>Pharmacy</span> |
+            <span>Law</span> |
+            <span>Distance BCA</span> |
+            <span>Global MBA</span> |
+            <span>Online PGDM</span> |
+            <span>PhD</span> |
+            <span>Machine Learning</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+     
+</body>
+<script src="yugedu.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+    integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+    crossorigin="anonymous"></script>
+
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 2,
+      spaceBetween: 0,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+       
+      },
+       autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      },navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 50,
+        },
+      },
+      
+    });
+    ////////////card section start
+    document.addEventListener("DOMContentLoaded", function () {
+const track = document.getElementById("sliderTrack");
+  const dotsContainer = document.getElementById("dotsContainer");
+  const prevBtn = document.getElementById("cardprevBtn");
+  const nextBtn = document.getElementById("cardnextBtn");
+  const slides = document.querySelectorAll(".cardslide");
+
+  let slidesToScroll = getSlidesToScroll();
+  let currentIndex = 0;
+  let totalPages = Math.ceil(slides.length / slidesToScroll);
+  let startX = 0;
+
+  function getSlidesToScroll() {
+    const width = window.innerWidth;
+    if (width < 600) return 1;
+    if (width < 900) return 2;
+    return 3;
+  }
+
+  function goToSlide(index) {
+    if (index >= totalPages) index = 0;
+    if (index < 0) index = totalPages - 1;
+
+    currentIndex = index;
+    const slideWidth = slides[0].offsetWidth;
+    track.style.transform = `translateX(-${slideWidth * slidesToScroll * currentIndex}px)`;
+    updateDots();
+  }
+
+  function renderDots() {
+    dotsContainer.innerHTML = '';
+    totalPages = Math.ceil(slides.length / slidesToScroll);
+    for (let i = 0; i < totalPages; i++) {
+      const dot = document.createElement("span");
+      dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      dot.addEventListener('click', () => goToSlide(i));
+      dotsContainer.appendChild(dot);
+    }
+  }
+
+  function updateDots() {
+    document.querySelectorAll(".carousel-dot").forEach((dot, i) => {
+      dot.classList.toggle("active", i === currentIndex);
+    });
+  }
+
+  window.addEventListener("resize", () => {
+    slidesToScroll = getSlidesToScroll();
+    goToSlide(0);
+    renderDots();
+  });
+
+  prevBtn.addEventListener("click", () => goToSlide(currentIndex - 1));
+  nextBtn.addEventListener("click", () => goToSlide(currentIndex + 1));
+
+  // Touch control
+  track.addEventListener("touchstart", e => startX = e.touches[0].clientX);
+  track.addEventListener("touchend", e => {
+    let endX = e.changedTouches[0].clientX;
+    if (startX - endX > 50) goToSlide(currentIndex + 1);
+    if (endX - startX > 50) goToSlide(currentIndex - 1);
+  });
+
+  renderDots();
+  goToSlide(0);
+});
+/////////////card section end
+
+
+////////////achivement start
+const achievementSwiper = new Swiper(".achievements-swiper", {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      navigation: {
+        nextEl: ".achievements-next",
+        prevEl: ".achievements-prev",
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        }
+      }, autoplay: {
+        delay: 2000,
+        disableOnInteraction: false,
+      }
+    });
+    ////////////////achivement end
+
+
+    //////////marquee start
+    const root = document.documentElement;
+    const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+    const marqueeContent = document.querySelector("ul.marquee-content");
+
+    root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+
+    for (let i = 0; i < marqueeElementsDisplayed; i++) {
+      marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+    }
+    //////////marquee end
+
+
+  </script>
+   
+ <!-- testimonial js start -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $("#testimonial-slider").owlCarousel({
+        items: 1,
+        itemsDesktop: [1000, 1],
+        itemsDesktopSmall: [979, 1],
+        itemsTablet: [768, 1],
+        pagination: true,
+        navigation: false,
+        navigationText: ["", ""],
+        slideSpeed: 1000,
+        singleItem: true,
+        autoPlay: true
+      });
+    });
+  </script>
+  <!-- testimonial  js end -->
+
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</html>
